@@ -9,11 +9,10 @@
   "scripts": {
     "lint": "node_modules/.bin/eslint src",
     "dev": "webpack-dev-server --hot",
-    "build": "webpack --env dev && webpack --env build && yarn test",
+    "build": "webpack && webpack --env.production && yarn test",
     "test": "mocha --require @babel/register --colors ./test/*.spec.js",
     "test:watch": "mocha --require @babel/register --colors -w ./test/*.spec.js",
-    "test:cover": "cross-env NODE_ENV=test nyc mocha --require @babel/register --colors test/*.js",
-    "repl": "node -i -e \"$(< ./lib/app.js)\""
+    "test:cover": "cross-env NODE_ENV=test nyc mocha --require @babel/register --colors test/*.js"
   },
   "husky": {
     "hooks": {
