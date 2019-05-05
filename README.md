@@ -1,8 +1,11 @@
+# SPA and Component Library Starter
+- don't forget to change the name in package.json :)
+
 ### App and Lib Bundle
-- supports HMR
 - This setup allows you to use your components as a single page app AND as a stand alone component library for use in other projects.
 - You can distribute and deploy the `public` folder as a single page app.
 - Webpack will also bundle each exported component from `src/index.js`, using code splitting. You can consume the component library by importing the `lib/gradwohl.min.js` file.
+- supports HMR
 
 ### Workflow
 - feature (off master) -> staging -> master
